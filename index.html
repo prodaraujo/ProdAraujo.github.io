@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentation page</title>
-</head>
-<body>
-    <h1>Hello, world!</h1>
-</body>
+<html lang="pt">
+<cabeça>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="largura=largura-do-dispositivo, escala-inicial=1.0">
+  <title>Respostas</title>
+  <link rel="ícone de atalho" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADDUlEQVR4nO1Zy2oUQRRtfC1c+lj5+ABXQs+9TlYDVW1w4XZQdOnadWICBg1ksjdhIn6CqAsTQQX/QdEPMLoyiWiqZuhxHiW3cGZ0ppOu6q7uHmEuFAx00XNO1X2ce9vzpja1qaU2Va0ebXKYkQwXJMNnksMnyeG74PiLFv2WHD/qZwwXGgGW1ZJ3xCvamr OlC4LjquDwVXJUNktw+CIY1hoVPJ878P1rl88KBo8Fw5Yt8DEiDFuCY32/4p/JBbwI4JZksJcW+NhiuCvYlZuZAVe+f1xwfOIcOB9zrQ36L7fgr/snBcdXWYOXQxJb9J8uTz438HLoUm9V9dKJ1 ATycBt54E1gPSV4uF0UeDkgUbqRCPxPDqclx52iCUgGe4lSLOX5wsHzQTysW4Gn6mhVpIKyat69YwxI7w3K5m7EsNUM/Ivmp89x1QZ8+/WmUt2uCmtLsfvDh/eU6nRU+90bJWdnbEjUjMCTyCKd YgW+bzEk+uD71rYgQXqLRGMsAa0qLVzhb0DaOh0VLi+Og19ejNzbtHC9BvMxloCWxBYBFj6YHwc2chOjJz/Ys3LfLpgDmDfx/+dWL40h4Qw8pwVP42+AGg/rFx9AotfVYN2AR6oJHwxcKLlUjiT hCjzXayfehVI2KZrE6Knr2+ilBa8EwzB7AuTzkQTM6oRMSyCVC0UFbERgZ+pCMmkQR4Hv9aKDOCkJZhDEidLoIanSpE5Ip2nUtpAZ5HlnJBjMxRKgodPESgleAjMxx3A7sZg7JFWO3kSbxNxVM1 ktGH42nuaRdE0kpw3yfJ+EDXipCcCKEfgJbWjCBiufMyagb4Fj3SrAMl3wyLO1H7PlU5PR1ONu4rkpzSqLJiAYVhOBH5DgsFGg66x5aY36UMHhRf4nD5uqUjmWmsBwuAtbObrNS2fD3ZEhbw6ZC dacnXyU0awyk+zE8FvqgLWamzJcpwLjwF1CyvOUtr28jaojyQ5j7fQv8G2SB9YVNgsjkUVDJ5rbkGanxoM6O/0BjySJ7vLg/Z9nc6QqJ+Iz69Sm5v3/9htwCyTCs1agAgAAAABJRU5ErkJggg==" tipo="imagem/ícone-x">
+  <estilo>
+corpo {
+  margem: 0;
+  família de fontes: Arial, sem serifa;
+  cor de fundo: #f4f4f4;
+}
+
+.recipiente {
+  largura máxima: 800px;
+  margem: 50px automático;
+  alinhamento de texto: centralizar;
+}
+
+h1 {
+  margem inferior: 30px;
+  cor: #333;
+}
+
+.cardápio {
+  estilo de lista: nenhum;
+  preenchimento: 0;
+  exibição: flexível;
+  flex-wrap: envolver;
+  justificar-conteúdo: centro;
+}
+
+.menu li {
+  margem direita: 20px;
+  margem inferior: 20px;
+}
+
+.menu li a {
+  exibir: bloco;
+  preenchimento: 10px 20px;
+  decoração de texto: nenhuma;
+  cor de fundo: #007bff;
+  cor: #fff;
+  raio da borda: 5px;
+  transição: cor de fundo 0,3s de facilidade;
+}
+
+.menu li a:hover {
+  cor de fundo: #0056b3;
+}
+  </estilo>
+</cabeçalho>
+<corpo>
+  <div class="container">
+    <h1>Escolha uma resposta</h1>
+  
+    <ul class="menu">
+      <li><a href="/repostas-sinistro/documentacao-recebida.html">Documentação recebida</a></li>
+      <li><a href="/repostas-sinistro/seguro-vigente.html">Seguro vigente sem comunicado</a></li>
+      <li><a href="/repostas-sinistro/seguro-nao-vigente.html">Seguro não vigente sem comunicado</a></li>
+
+    </ul>
+  </div>
+</corpo>
 </html>

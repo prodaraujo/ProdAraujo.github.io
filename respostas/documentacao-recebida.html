@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<cabeça>
+<meta charset="UTF-8">
+<meta name="viewport" content="largura=largura-do-dispositivo, escala-inicial=1.0">
+<title>Documentação recebida</title>
+<link rel="ícone de atalho" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADDUlEQVR4nO1Zy2oUQRRtfC1c+lj5+ABXQs+9TlYDVW1w4XZQdOnadWICBg1ksjdhIn6CqAsTQQX/QdEPMLoyiWiqZuhxHiW3cGZ0ppOu6q7uHmEuFAx00XNO1X2ce9vzpja1qaU2Va0ebXKYkQwXJMNnksMnyeG74PiLFv2WHD/qZwwXGgGW1ZJ3xCvamr OlC4LjquDwVXJUNktw+CIY1hoVPJ878P1rl88KBo8Fw5Yt8DEiDFuCY32/4p/JBbwI4JZksJcW+NhiuCvYlZuZAVe+f1xwfOIcOB9zrQ36L7fgr/snBcdXWYOXQxJb9J8uTz438HLoUm9V9dKJ1 ATycBt54E1gPSV4uF0UeDkgUbqRCPxPDqclx52iCUgGe4lSLOX5wsHzQTysW4Gn6mhVpIKyat69YwxI7w3K5m7EsNUM/Ivmp89x1QZ8+/WmUt2uCmtLsfvDh/eU6nRU+90bJWdnbEjUjMCTyCKd YgW+bzEk+uD71rYgQXqLRGMsAa0qLVzhb0DaOh0VLi+Og19ejNzbtHC9BvMxloCWxBYBFj6YHwc2chOjJz/Ys3LfLpgDmDfx/+dWL40h4Qw8pwVP42+AGg/rFx9AotfVYN2AR6oJHwxcKLlUjiT hCjzXayfehVI2KZrE6Knr2+ilBa8EwzB7AuTzkQTM6oRMSyCVC0UFbERgZ+pCMmkQR4Hv9aKDOCkJZhDEidLoIanSpE5Ip2nUtpAZ5HlnJBjMxRKgodPESgleAjMxx3A7sZg7JFWO3kSbxNxVM1 ktGH42nuaRdE0kpw3yfJ+EDXipCcCKEfgJbWjCBiufMyagb4Fj3SrAMl3wyLO1H7PlU5PR1ONu4rkpzSqLJiAYVhOBH5DgsFGg66x5aY36UMHhRf4nD5uqUjmWmsBwuAtbObrNS2fD3ZEhbw6ZC dacnXyU0awyk+zE8FvqgLWamzJcpwLjwF1CyvOUtr28jaojyQ5j7fQv8G2SB9YVNgsjkUVDJ5rbkGanxoM6O/0BjySJ7vLg/Z9nc6QqJ+Iz69Sm5v3/9htwCyTCs1agAgAAAABJRU5ErkJggg==" tipo="imagem/ícone-x">
+<estilo>
+  corpo {
+    família de fontes: 'Segoe UI', Tahoma, Geneva, Verdana, sem serifa;
+    cor de fundo: #f8f9fa;
+    margem: 0;
+    preenchimento: 0;
+    exibição: flexível;
+    justificar-conteúdo: centro;
+    alinhar-itens: centro;
+    altura mínima: 100vh;
+  }
+  .recipiente {
+    cor de fundo: #fff;
+    raio da borda: 8px;
+    caixa-sombra: 0 0 10px rgba(0, 0, 0, 0.1);
+    preenchimento: 20px;
+    largura: 300px; /* Reduzindo a largura do contêiner */
+    largura máxima: 90%;
+  }
+  h1 {
+    tamanho da fonte: 20px; /* Reduzindo o tamanho do título */
+    margem inferior: 20px;
+    margem superior: 0px;
+    alinhamento de texto: centralizar;
+    cor: #484848;
+  }
+  rótulo {
+    exibir: bloco;
+    margem inferior: 5px;
+    cor: #666;
+    tamanho da fonte: 14px; /* Reduzindo o tamanho do texto das etiquetas */
+  }
+  entrada, textarea {
+    largura: 100%;
+    preenchimento: 8px; /* Reduzindo o preenchimento dos campos de entrada */
+    margem inferior: 10px; /* Reduzindo a margem inferior dos campos de entrada */
+    borda: 1px sólido #ccc;
+    raio da borda: 4px;
+    dimensionamento de caixa: caixa de borda;
+    tamanho da fonte: 14px; /* Reduzindo o tamanho da fonte dos campos de entrada */
+  }
+  botão {
+    largura: 100%;
+    preenchimento: 10px;
+    cor de fundo: #007bff;
+    cor: #fff;
+    borda: nenhuma;
+    raio da borda: 4px;
+    cursor: ponteiro;
+    tamanho da fonte: 14px; /* Reduzindo o tamanho do texto do botão */
+    transição: cor de fundo 0,3s de facilidade;
+  }
+  botão: pairar {
+    cor de fundo: #0056b3;
+  }
+
+  /* Estilos do botão de retorno */
+  #btnVoltar {
+    posição:estático;
+    margem superior: 20px;
+    topo: 20px;
+    direita: 20px;
+    preenchimento: 10px;
+    cor de fundo: #007bff;
+    cor: #fff;
+    borda: nenhuma;
+    raio da borda: 4px;
+    cursor: ponteiro;
+    tamanho da fonte: 14px;
+    transição: cor de fundo 0,3s de facilidade;
+}
+
+  #btnVoltar:passe o mouse {
+      cor de fundo: #0056b3;
+  }
+
+  .etiqueta-caixa-de-seleção {
+  exibição: inline-flex;
+  alinhar-itens: centro;
+  cursor: ponteiro;
+  tamanho da fonte: 14px;
+}
+
+  .entrada da caixa de seleção {
+    margem direita: 8px; /* Espaçamento entre a caixa de seleção e o texto do rótulo */
+    margem superior: 3px;
+    margem inferior: 2px;
+}
+
+.caixa de seleção-rótulo1 {
+  exibição: inline-flex;
+  alinhar-itens: centro;
+  cursor: ponteiro;
+  tamanho da fonte: 14px;
+}
+
+  .caixa de seleção-entrada1 {
+    margem direita: 8px; /* Espaçamento entre a caixa de seleção e o texto do rótulo */
+    margem superior: 3px;
+    margem inferior: 2px;
+}
+
+  .escondido {
+    Mostrar nenhum;
+  }
+
+  #textoResultado {
+    largura: 100%;
+    preenchimento: 8px;
+    margem superior: 10px;
+    margem inferior: 10px; /* Reduzindo a margem inferior do texto do resultado */
+    borda: 1px sólido #ccc;
+    raio da borda: 4px;
+    dimensionamento de caixa: caixa de borda;
+    redimensionar: nenhum;
+    altura: 100px; /* Reduzindo a altura da área de texto do resultado */
+    tamanho da fonte: 14px; /* Reduzindo o tamanho da fonte do texto do resultado */
+  }
+  .btn-cópia {
+    margem superior: 5px; /* Reduzindo a margem superior do botão de cópia */
+    margem-inferior: 0; /* Removendo a margem inferior do botão de cópia */
+  }
+
+  @keyframes fade-in {
+    0% { opacidade: 0; }
+    100% { opacidade: 1; }
+  }
+
+  .mensagemCopiado {
+    posição:fixa;
+    Mostrar nenhum;
+    cor de fundo: rgb(69, 148, 69);
+    cor: #fff;
+    raio da borda: 2px;
+    cor da borda: #fff;
+    espaçamento de borda: 10px;
+    preenchimento: 2px 104px 5px 104px;
+    margem: 0px 0px 800px 0px;
+    espessura da fonte: 600;
+    tamanho da fonte: 15pt;
+    índice z: 9999;
+    animação: fade-in 0,5s fade-out; /* Adicionando a animação */
+  }
+</estilo>
+</cabeçalho>
+<corpo>
+
+<div class="container">
+  <h1>Documentação recebida</h1>
+
+  <label for="dataCancelamento">Dados do Recebimento:</label>
+  <input type="data" id="dataCancelamento">
+
+  <label for="certificado">Protocolo:</label>
+  <input type="text" id="certificado" placeholder="Digite o número do protocolo">
+
+  <label for="produto">Nome do Segurado:</label>
+  <input type="text" id="produto" placeholder="Digite o nome do Segurado">
+
+
+
+  <button onclick="gerarTexto()">Gerar Texto</button>
+
+  <textarea id="textoResultado" placeholder="Aqui vai o texto gerar" readonly></textarea>
+
+  <button class="btn-copy" onclick="copiarTexto()">Copiar Texto</button>
+
+  <a href="/index.html"><button class="btnVoltar" id="btnVoltar">Voltar</button></a>
+
+</div>
+
+<div id="copiedMessage" class="mensagemCopiado">Texto copiado!</div>
+
+<roteiro>
+ 
+  função preencherDataCancelamento() {
+    var dataCancelamentoInput = document.getElementById("dataCancelamento");
+    var dataAtual = nova Data();
+    var dia = String(dataAtual.getDate()).padStart(2, '0');
+    var mes = String(dataAtual.getMonth() + 1).padStart(2, '0');
+    var ano = dataAtual.getFullYear();
+    var dataAtualFormatada = ano + '-' + meses + '-' + dia;
+    dataCancelamentoInput.value = dataAtualFormatada;
+  }
+
+  preencherDataCancelamento();
+
+  função gerarTexto() {
+    var certificado = document.getElementById("certificado").value;
+    var produto = document.getElementById("produto").value;
+    var dataCancelamentoInput = document.getElementById("dataCancelamento").value;
+    var dataCancelamento = new Date(dataCancelamentoInput + "T00:00:00");
+    
+    var dia = String(dataCancelamento.getDate()).padStart(2, '0');
+    var mes = String(dataCancelamento.getMonth() + 1).padStart(2, '0');
+    var ano = dataCancelamento.getFullYear();
+    var dataCancelamentoFormatada = dia + '/' + mes + '/' + ano;
+
+    var texto = `Confirmamos o recebimento dos documentos em ${dataCancelamentoFormatada} e o processo de sinistro nº ${certificado} em nome de ${produto} se encontra em análise.
+
+O prazo para análise e conclusão do processo é de até 30 dias a contar da data do recebimento da documentação completa na Seguradora, de acordo com a Regulamentação da Superintendência de Seguros Privados – SUSEP.  
+ 
+Caso seja necessário, poderá ser solicitado o envio de documentos complementares ou que estejam na relação inicial de documentos que lhe enviaremos.
+
+    `
+    document.getElementById("textoResultado").value = texto;
+  }
+
+  função copiarTexto() {
+    var textoResultado = document.getElementById("textoResultado");
+    textoResultado.select();
+    textoResultado.setSelectionRange(0, 99999); /* Para dispositivos móveis */
+    document.execCommand("copiar");
+
+    // Exibir a mensagem de cópia com a classe de animação
+    var duplicateMessage = document.getElementById("copyedMessage");
+    copyMessage.style.display = "inline";
+    copyMessage.classList.add("fade-in");
+
+    // Ocultar a mensagem após a conclusão da animação
+    setTimeout(função() {
+        copiedMessage.classList.remove("fade-in");
+        setTimeout(função() {
+            duplicateMessage.style.display = "nenhum";
+        }, 500); // Tempo de animação em milissegundos
+    }, 500); // Tempo de animação em milissegundos
+
+    // Limpar os campos de entrada após copiar o texto
+    document.getElementById("certificado").value = "";
+    document.getElementById("produto").value = "";
+
+    // Limpar campo de resposta
+    document.getElementById("textoResultado").value = "";
+
+    // Preencher os dados de cancelamento com os dados atuais
+    preencherDataCancelamento();
+  }
+</script>
+</corpo>
+</html>
