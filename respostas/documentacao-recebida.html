@@ -1,162 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<cabeça>
+<head>
 <meta charset="UTF-8">
-<meta name="viewport" content="largura=largura-do-dispositivo, escala-inicial=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Documentação recebida</title>
-<link rel="ícone de atalho" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADDUlEQVR4nO1Zy2oUQRRtfC1c+lj5+ABXQs+9TlYDVW1w4XZQdOnadWICBg1ksjdhIn6CqAsTQQX/QdEPMLoyiWiqZuhxHiW3cGZ0ppOu6q7uHmEuFAx00XNO1X2ce9vzpja1qaU2Va0ebXKYkQwXJMNnksMnyeG74PiLFv2WHD/qZwwXGgGW1ZJ3xCvamr OlC4LjquDwVXJUNktw+CIY1hoVPJ878P1rl88KBo8Fw5Yt8DEiDFuCY32/4p/JBbwI4JZksJcW+NhiuCvYlZuZAVe+f1xwfOIcOB9zrQ36L7fgr/snBcdXWYOXQxJb9J8uTz438HLoUm9V9dKJ1 ATycBt54E1gPSV4uF0UeDkgUbqRCPxPDqclx52iCUgGe4lSLOX5wsHzQTysW4Gn6mhVpIKyat69YwxI7w3K5m7EsNUM/Ivmp89x1QZ8+/WmUt2uCmtLsfvDh/eU6nRU+90bJWdnbEjUjMCTyCKd YgW+bzEk+uD71rYgQXqLRGMsAa0qLVzhb0DaOh0VLi+Og19ejNzbtHC9BvMxloCWxBYBFj6YHwc2chOjJz/Ys3LfLpgDmDfx/+dWL40h4Qw8pwVP42+AGg/rFx9AotfVYN2AR6oJHwxcKLlUjiT hCjzXayfehVI2KZrE6Knr2+ilBa8EwzB7AuTzkQTM6oRMSyCVC0UFbERgZ+pCMmkQR4Hv9aKDOCkJZhDEidLoIanSpE5Ip2nUtpAZ5HlnJBjMxRKgodPESgleAjMxx3A7sZg7JFWO3kSbxNxVM1 ktGH42nuaRdE0kpw3yfJ+EDXipCcCKEfgJbWjCBiufMyagb4Fj3SrAMl3wyLO1H7PlU5PR1ONu4rkpzSqLJiAYVhOBH5DgsFGg66x5aY36UMHhRf4nD5uqUjmWmsBwuAtbObrNS2fD3ZEhbw6ZC dacnXyU0awyk+zE8FvqgLWamzJcpwLjwF1CyvOUtr28jaojyQ5j7fQv8G2SB9YVNgsjkUVDJ5rbkGanxoM6O/0BjySJ7vLg/Z9nc6QqJ+Iz69Sm5v3/9htwCyTCs1agAgAAAABJRU5ErkJggg==" tipo="imagem/ícone-x">
-<estilo>
-  corpo {
-    família de fontes: 'Segoe UI', Tahoma, Geneva, Verdana, sem serifa;
-    cor de fundo: #f8f9fa;
-    margem: 0;
-    preenchimento: 0;
-    exibição: flexível;
-    justificar-conteúdo: centro;
-    alinhar-itens: centro;
-    altura mínima: 100vh;
+<link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADDUlEQVR4nO1Zy2oUQRRtfC1c+lj5+ABXQs+9TlYDVW1w4XZQdOnadWICBg1ksjdhIn6CqAsTQQX/QdEPMLoyiWiqZuhxHiW3cGZ0ppOu6q7uHmEuFAx00XNO1X2ce9vzpja1qaU2Va0ebXKYkQwXJMNnksMnyeG74PiLFv2WHD/qZwwXGgGW1ZJ3xCvamrOlC4LjquDwVXJUNktw+CIY1hoVPJ878P1rl88KBo8Fw5Yt8DEiDFuCY32/4p/JBbwI4JZksJcW+NhiuCvYlZuZAVe+f1xwfOIcOB9zrQ36L7fgr/snBcdXWYOXQxJb9J8uTz438HLoUm9V9dKJ1ATycBt54E1gPSV4uF0UeDkgUbqRCPxPDqclx52iCUgGe4lSLOX5wsHzQTysW4Gn6mhVpIKyat69YwxI7w3K5m7EsNUM/Ivmp89x1QZ8+/WmUt2uCmtLsfvDh/eU6nRU+90bJWdnbEjUjMCTyCKdYgW+bzEk+uD71rYgQXqLRGMsAa0qLVzhb0DaOh0VLi+Og19ejNzbtHC9BvMxloCWxBYBFj6YHwc2chOjJz/Ys3LfLpgDmDfx/+dWL40h4Qw8pwVP42+AGg/rFx9AotfVYN2AR6oJHwxcKLlUjiThCjzXayfehVI2KZrE6Knr2+ilBa8EwzB7AuTzkQTM6oRMSyCVC0UFbERgZ+pCMmkQR4Hv9aKDOCkJZhDEidLoIanSpE5Ip2nUtpAZ5HlnJBjMxRKgodPESgleAjMxx3A7sZg7JFWO3kSbxNxVM1ktGH42nuaRdE0kpw3yfJ+EDXipCcCKEfgJbWjCBiufMyagb4Fj3SrAMl3wyLO1H7PlU5PR1ONu4rkpzSqLJiAYVhOBH5DgsFGg66x5aY36UMHhRf4nD5uqUjmWmsBwuAtbObrNS2fD3ZEhbw6ZCdacnXyU0awyk+zE8FvqgLWamzJcpwLjwF1CyvOUtr28jaojyQ5j7fQv8G2SB9YVNgsjkUVDJ5rbkGanxoM6O/0BjySJ7vLg/Z9nc6QqJ+Iz69Sm5v3/9htwCyTCs1agAgAAAABJRU5ErkJggg==" type="image/x-icon">
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
-  .recipiente {
-    cor de fundo: #fff;
-    raio da borda: 8px;
-    caixa-sombra: 0 0 10px rgba(0, 0, 0, 0.1);
-    preenchimento: 20px;
-    largura: 300px; /* Reduzindo a largura do contêiner */
-    largura máxima: 90%;
+  .container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; /* Reduzindo a largura do contêiner */
+    max-width: 90%;
   }
   h1 {
-    tamanho da fonte: 20px; /* Reduzindo o tamanho do título */
-    margem inferior: 20px;
-    margem superior: 0px;
-    alinhamento de texto: centralizar;
-    cor: #484848;
+    font-size: 20px; /* Reduzindo o tamanho do título */
+    margin-bottom: 20px;
+    margin-top: 0px;
+    text-align: center;
+    color: #484848;
   }
-  rótulo {
-    exibir: bloco;
-    margem inferior: 5px;
-    cor: #666;
-    tamanho da fonte: 14px; /* Reduzindo o tamanho do texto das etiquetas */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 14px; /* Reduzindo o tamanho do texto das etiquetas */
   }
-  entrada, textarea {
-    largura: 100%;
-    preenchimento: 8px; /* Reduzindo o preenchimento dos campos de entrada */
-    margem inferior: 10px; /* Reduzindo a margem inferior dos campos de entrada */
-    borda: 1px sólido #ccc;
-    raio da borda: 4px;
-    dimensionamento de caixa: caixa de borda;
-    tamanho da fonte: 14px; /* Reduzindo o tamanho da fonte dos campos de entrada */
+  input, textarea {
+    width: 100%;
+    padding: 8px; /* Reduzindo o preenchimento dos campos de entrada */
+    margin-bottom: 10px; /* Reduzindo a margem inferior dos campos de entrada */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px; /* Reduzindo o tamanho da fonte dos campos de entrada */
   }
-  botão {
-    largura: 100%;
-    preenchimento: 10px;
-    cor de fundo: #007bff;
-    cor: #fff;
-    borda: nenhuma;
-    raio da borda: 4px;
-    cursor: ponteiro;
-    tamanho da fonte: 14px; /* Reduzindo o tamanho do texto do botão */
-    transição: cor de fundo 0,3s de facilidade;
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Reduzindo o tamanho do texto do botão */
+    transition: background-color 0.3s ease;
   }
-  botão: pairar {
-    cor de fundo: #0056b3;
+  button:hover {
+    background-color: #0056b3;
   }
 
-  /* Estilos do botão de retorno */
+  /* Estilos do botão de voltar */
   #btnVoltar {
-    posição:estático;
-    margem superior: 20px;
-    topo: 20px;
-    direita: 20px;
-    preenchimento: 10px;
-    cor de fundo: #007bff;
-    cor: #fff;
-    borda: nenhuma;
-    raio da borda: 4px;
-    cursor: ponteiro;
-    tamanho da fonte: 14px;
-    transição: cor de fundo 0,3s de facilidade;
+    position:static;
+    margin-top: 20px;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
 }
 
-  #btnVoltar:passe o mouse {
-      cor de fundo: #0056b3;
+  #btnVoltar:hover {
+      background-color: #0056b3;
   }
 
-  .etiqueta-caixa-de-seleção {
-  exibição: inline-flex;
-  alinhar-itens: centro;
-  cursor: ponteiro;
-  tamanho da fonte: 14px;
+  .checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-  .entrada da caixa de seleção {
-    margem direita: 8px; /* Espaçamento entre a caixa de seleção e o texto do rótulo */
-    margem superior: 3px;
-    margem inferior: 2px;
+  .checkbox-input {
+    margin-right: 8px; /* Espaçamento entre a checkbox e o texto do label */
+    margin-top: 3px;
+    margin-bottom: 2px;
 }
 
-.caixa de seleção-rótulo1 {
-  exibição: inline-flex;
-  alinhar-itens: centro;
-  cursor: ponteiro;
-  tamanho da fonte: 14px;
+.checkbox-label1 {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-  .caixa de seleção-entrada1 {
-    margem direita: 8px; /* Espaçamento entre a caixa de seleção e o texto do rótulo */
-    margem superior: 3px;
-    margem inferior: 2px;
+  .checkbox-input1 {
+    margin-right: 8px; /* Espaçamento entre a checkbox e o texto do label */
+    margin-top: 3px;
+    margin-bottom: 2px;
 }
 
-  .escondido {
-    Mostrar nenhum;
+  .hidden {
+    display: none;
   }
 
   #textoResultado {
-    largura: 100%;
-    preenchimento: 8px;
-    margem superior: 10px;
-    margem inferior: 10px; /* Reduzindo a margem inferior do texto do resultado */
-    borda: 1px sólido #ccc;
-    raio da borda: 4px;
-    dimensionamento de caixa: caixa de borda;
-    redimensionar: nenhum;
-    altura: 100px; /* Reduzindo a altura da área de texto do resultado */
-    tamanho da fonte: 14px; /* Reduzindo o tamanho da fonte do texto do resultado */
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Reduzindo a margem inferior do texto de resultado */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+    height: 100px; /* Reduzindo a altura da área de texto de resultado */
+    font-size: 14px; /* Reduzindo o tamanho da fonte do texto de resultado */
   }
-  .btn-cópia {
-    margem superior: 5px; /* Reduzindo a margem superior do botão de cópia */
-    margem-inferior: 0; /* Removendo a margem inferior do botão de cópia */
+  .btn-copy {
+    margin-top: 5px; /* Reduzindo a margem superior do botão de cópia */
+    margin-bottom: 0; /* Removendo a margem inferior do botão de cópia */
   }
 
   @keyframes fade-in {
-    0% { opacidade: 0; }
-    100% { opacidade: 1; }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
   }
 
   .mensagemCopiado {
-    posição:fixa;
-    Mostrar nenhum;
-    cor de fundo: rgb(69, 148, 69);
-    cor: #fff;
-    raio da borda: 2px;
-    cor da borda: #fff;
-    espaçamento de borda: 10px;
-    preenchimento: 2px 104px 5px 104px;
-    margem: 0px 0px 800px 0px;
-    espessura da fonte: 600;
-    tamanho da fonte: 15pt;
-    índice z: 9999;
-    animação: fade-in 0,5s fade-out; /* Adicionando a animação */
+    position:fixed;
+    display: none;
+    background-color: rgb(69, 148, 69);
+    color: #fff;
+    border-radius: 2px;
+    border-color: #fff;
+    border-spacing: 10px;
+    padding: 2px 104px 5px 104px;
+    margin: 0px 0px 800px 0px;
+    font-weight: 600;
+    font-size: 15pt;
+    z-index: 9999;
+    animation: fade-in 0.5s ease-out; /* Adicionando a animação */
   }
-</estilo>
-</cabeçalho>
-<corpo>
+</style>
+</head>
+<body>
 
 <div class="container">
   <h1>Documentação recebida</h1>
 
-  <label for="dataCancelamento">Dados do Recebimento:</label>
-  <input type="data" id="dataCancelamento">
+  <label for="dataCancelamento">Data do Recebimento:</label>
+  <input type="date" id="dataCancelamento">
 
   <label for="certificado">Protocolo:</label>
   <input type="text" id="certificado" placeholder="Digite o número do protocolo">
@@ -168,7 +168,7 @@
 
   <button onclick="gerarTexto()">Gerar Texto</button>
 
-  <textarea id="textoResultado" placeholder="Aqui vai o texto gerar" readonly></textarea>
+  <textarea id="textoResultado" placeholder="Aqui vai o texto gerado" readonly></textarea>
 
   <button class="btn-copy" onclick="copiarTexto()">Copiar Texto</button>
 
@@ -178,21 +178,21 @@
 
 <div id="copiedMessage" class="mensagemCopiado">Texto copiado!</div>
 
-<roteiro>
+<script>
  
-  função preencherDataCancelamento() {
+  function preencherDataCancelamento() {
     var dataCancelamentoInput = document.getElementById("dataCancelamento");
-    var dataAtual = nova Data();
+    var dataAtual = new Date();
     var dia = String(dataAtual.getDate()).padStart(2, '0');
     var mes = String(dataAtual.getMonth() + 1).padStart(2, '0');
     var ano = dataAtual.getFullYear();
-    var dataAtualFormatada = ano + '-' + meses + '-' + dia;
+    var dataAtualFormatada = ano + '-' + mes + '-' + dia;
     dataCancelamentoInput.value = dataAtualFormatada;
   }
 
   preencherDataCancelamento();
 
-  função gerarTexto() {
+  function gerarTexto() {
     var certificado = document.getElementById("certificado").value;
     var produto = document.getElementById("produto").value;
     var dataCancelamentoInput = document.getElementById("dataCancelamento").value;
@@ -207,41 +207,41 @@
 
 O prazo para análise e conclusão do processo é de até 30 dias a contar da data do recebimento da documentação completa na Seguradora, de acordo com a Regulamentação da Superintendência de Seguros Privados – SUSEP.  
  
-Caso seja necessário, poderá ser solicitado o envio de documentos complementares ou que estejam na relação inicial de documentos que lhe enviaremos.
+Caso seja necessário, poderá ser solicitado o envio de documentos complementares ou que estejam na relação inicial de documentos que lhe enviamos.
 
     `
     document.getElementById("textoResultado").value = texto;
   }
 
-  função copiarTexto() {
+  function copiarTexto() {
     var textoResultado = document.getElementById("textoResultado");
     textoResultado.select();
     textoResultado.setSelectionRange(0, 99999); /* Para dispositivos móveis */
-    document.execCommand("copiar");
+    document.execCommand("copy");
 
-    // Exibir a mensagem de cópia com a classe de animação
-    var duplicateMessage = document.getElementById("copyedMessage");
-    copyMessage.style.display = "inline";
-    copyMessage.classList.add("fade-in");
+    // Exibir a mensagem de copiado com a classe de animação
+    var copiedMessage = document.getElementById("copiedMessage");
+    copiedMessage.style.display = "inline";
+    copiedMessage.classList.add("fade-in");
 
     // Ocultar a mensagem após a conclusão da animação
-    setTimeout(função() {
+    setTimeout(function() {
         copiedMessage.classList.remove("fade-in");
-        setTimeout(função() {
-            duplicateMessage.style.display = "nenhum";
-        }, 500); // Tempo de animação em milissegundos
-    }, 500); // Tempo de animação em milissegundos
+        setTimeout(function() {
+            copiedMessage.style.display = "none";
+        }, 500); // Tempo da animação em milissegundos
+    }, 500); // Tempo da animação em milissegundos
 
     // Limpar os campos de entrada após copiar o texto
     document.getElementById("certificado").value = "";
-    document.getElementById("produto").value = "";
+    document.getElementById("produto").value = ""; 
 
-    // Limpar campo de resposta
+    // Limpar campo da resposta
     document.getElementById("textoResultado").value = "";
 
-    // Preencher os dados de cancelamento com os dados atuais
+    // Preencher a data de cancelamento com a data atual
     preencherDataCancelamento();
   }
 </script>
-</corpo>
+</body>
 </html>
