@@ -203,11 +203,25 @@
     var ano = dataCancelamento.getFullYear();
     var dataCancelamentoFormatada = dia + '/' + mes + '/' + ano;
 
-    var texto = `Confirmamos o recebimento dos documentos em ${dataCancelamentoFormatada} e o processo de sinistro nº ${certificado} em nome de ${produto} se encontra em análise.
+    var texto = "Confirmamos o recebimento dos documentos em "+dataCancelamentoFormatada+" e ";
 
-O prazo para análise e conclusão do processo é de até 30 dias a contar da data do recebimento da documentação completa na Seguradora, de acordo com a Regulamentação da Superintendência de Seguros Privados – SUSEP.  
+if(certificado.includes(",") || certificado.includes("e")) {
+  texto +=  "os processos ";
+}
+else {texto += "o processo ";}
+
+texto += "de sinistro nº "+certificado+" em nome de "+produto+" se "; 
+
+if(certificado.includes(",") || certificado.includes("e")) {
+  texto += "encontram ";
+}
+else {texto += "encontra ";}
+
+texto += "em análise.\n\n";
+
+texto += "O prazo para análise e conclusão do processo é de até 30 dias a contar da data do recebimento da documentação completa na Seguradora, de acordo com a Regulamentação da Superintendência de Seguros Privados – SUSEP.\n\n";
  
-Caso seja necessário, poderá ser solicitado o envio de documentos complementares ou que estejam na relação inicial de documentos que lhe enviamos.`
+texto += "Caso seja necessário, poderá ser solicitado o envio de documentos complementares ou que estejam na relação inicial de documentos que lhe enviamos.";
     
     document.getElementById("textoResultado").value = texto;
   }
