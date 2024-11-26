@@ -161,10 +161,14 @@
   <label for="nome">Nome do Segurado:</label>
   <input type="text" id="nome" placeholder="Digite o nome do Segurado">
 
-  <label for="morte">Tipo de morte</label>
+  <label for="morte">Cobertura</label>
   <select name="morte" id="morte">
-    <option value="Morte Natural - MN">Natural</option>
-    <option value="Morte Acidental - MA">Acidental</option>
+    <option value="cobertura de Morte Natural - MN">Natural</option>
+    <option value="cobertura de Morte Acidental - MA">Acidental</option>
+    <option value="cobertura de Invalidez Permanente Total ou Parcial por Acidente - IPA">IPA</option>
+    <option value="cobertura de Invalidez por Doença - IPD">IPD</option>
+    <option value="Cobertura por Doença Grave - CDG">CDG</option>
+    <option value="cobertura de Diagnóstico de Câncer - DC">Diag. Câncer</option>
  </select>
 
 
@@ -191,7 +195,7 @@
 
 Sentimos muito pelo ocorrido e queremos dar todo o apoio necessário a família nesse momento tão difícil.
 
-Realizamos a análise do comunicado de sinistro nº ${sinistro} em nome de ${nome} e informamos que a indenização por cobertura de ${morte} foi aprovada.
+Realizamos a análise do comunicado de sinistro nº ${sinistro} em nome de ${nome} e informamos que a indenização por ${morte} foi aprovada.
 
 Segue a carta explicativa em anexo.
 
