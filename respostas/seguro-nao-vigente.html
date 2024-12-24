@@ -161,7 +161,10 @@
   <label for="cpf">CPF:</label>
   <input type="text" id="cpf" placeholder="Digite o número de CPF">
 
-
+  <label class="checkbox-label1" for="produtoCheckbox">
+    <input type="checkbox" id="produtoCheckbox" class="checkbox-input1">
+    Pendente
+  </label>
 
   <button onclick="gerarTexto()">Gerar Texto</button>
 
@@ -177,6 +180,10 @@
 
 <script>
 
+var checkbox = document.getElementById("produtoCheckbox");
+
+checkbox.checked = true;
+
 function mascararCPF(cpf) {
     // Remove todos os caracteres não numéricos
     cpf = cpf.replace(/\D/g, '');
@@ -190,18 +197,20 @@ function mascararCPF(cpf) {
   function gerarTexto() {
     var nome = document.getElementById("nome").value;
     var cpf = mascararCPF(document.getElementById("cpf").value);
+    var checkbox1 = document.getElementById("produtoCheckbox").checked;
 
-    var texto = `Olá, tudo bem?
+    var texto = "Olá, tudo bem?\n\n";
 
-Sentimos muito pelo ocorrido e queremos dar todo o apoio necessário a família nesse momento tão difícil.
+texto += "Sentimos muito pelo ocorrido e queremos dar todo o apoio necessário a família nesse momento tão difícil.\n\n";
 
-Verificamos em nossos sistemas e informamos que não localizamos Seguro de Vida e/ou Acidentes Pessoais vigentes em nome de ${nome} – CPF ${cpf}.
+texto += "Verificamos em nossos sistemas e informamos que não localizamos Seguro de Vida e/ou Acidentes Pessoais vigentes em nome de "+nome+" – CPF "+cpf+".\n\n";
 
-Em caso de dúvidas, contate a Central Assistência Dia & Noite e Sinistro: 0800 722 2492. Seu funcionamento é de segunda a sexta, com exceção de feriados nacionais, das 08:00h às 19:00h.
+texto += "Em caso de dúvidas, contate a Central Assistência Dia & Noite e Sinistro: 0800 722 2492. Seu funcionamento é de segunda a sexta, com exceção de feriados nacionais, das 08:00h às 19:00h.\n\n";
 
-Caso o Sr. ${nome} tenha outros produtos conosco, em breve receberá o posicionamento da tratativa.
-
-Estamos à disposição para demais esclarecimentos que se fizerem necessários.`
+if(checkbox1){
+  texto += "Caso o Sr. "+nome+" tenha outros produtos conosco, em breve receberá o posicionamento da tratativa.\n\n"
+};
+texto += "Estamos à disposição para demais esclarecimentos que se fizerem necessários."
 
     document.getElementById("textoResultado").value = texto;
   }
