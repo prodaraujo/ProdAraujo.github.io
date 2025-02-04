@@ -194,6 +194,7 @@
     var sinistro= document.getElementById("sinistro").value;
     var nome = document.getElementById("nome").value;
     var morte = document.getElementById("morte").value;
+    var checkbox1 = document.getElementById("produtoCheckbox").checked;
 
     var texto = `Olá, tudo bem?
 
@@ -206,7 +207,7 @@ Segue a carta explicativa em anexo.
 Para esclarecimentos adicionais ou pedido de reanálise é necessário o contato através da Central Assistência Dia & Noite e Sinistro: 0800 722 2492. Seu funcionamento é de segunda a sexta, com exceção de feriados nacionais, das 08:00h às 19:00h.`
 
 if(checkbox1){
-  texto += "Caso o Sr. "+nome+" tenha outros produtos conosco, em breve receberá o posicionamento da tratativa.\n\n"
+  texto += "\n\nCaso o Sr. "+nome+" tenha outros produtos conosco, em breve receberá o posicionamento da tratativa.\n\n"
 };
 texto += "Estamos à disposição para demais esclarecimentos que se fizerem necessários."
 
