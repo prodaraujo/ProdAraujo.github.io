@@ -193,7 +193,8 @@ function mascararCPF(cpf) {
   function gerarTexto() {
     var nome = document.getElementById("nome").value;
     var cpf = mascararCPF(document.getElementById("cpf").value);
-
+    var checkbox1 = document.getElementById("produtoCheckbox").checked;
+    
     var texto = `Olá, tudo bem?
 
 Sentimos muito pelo ocorrido e queremos dar todo o apoio necessário a família nesse momento tão difícil.
