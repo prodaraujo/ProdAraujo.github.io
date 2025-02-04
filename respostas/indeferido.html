@@ -171,6 +171,10 @@
     <option value="cobertura de Diagnóstico de Câncer - DC">Diag. Câncer</option>
  </select>
 
+ <label class="checkbox-label1" for="produtoCheckbox">
+  <input type="checkbox" id="produtoCheckbox" class="checkbox-input1">
+    Pendente
+  </label> 
 
   <button onclick="gerarTexto()">Gerar Texto</button>
 
@@ -195,16 +199,17 @@
 
 Sentimos muito pelo ocorrido e queremos dar todo o apoio necessário a família nesse momento tão difícil.
 
-Realizamos a análise do comunicado de sinistro nº ${sinistro} em nome de ${nome} e informamos que a indenização por cobertura de ${morte} não foi aprovada.
+Realizamos a análise do comunicado de sinistro nº ${sinistro} em nome de ${nome} e informamos que a indenização por ${morte} não foi aprovada.
 
 Segue a carta explicativa em anexo.
 
-Para esclarecimentos adicionais ou pedido de reanálise é necessário o contato através da Central Assistência Dia & Noite e Sinistro: 0800 722 2492. Seu funcionamento é de segunda a sexta, com exceção de feriados nacionais, das 08:00h às 19:00h.
+Para esclarecimentos adicionais ou pedido de reanálise é necessário o contato através da Central Assistência Dia & Noite e Sinistro: 0800 722 2492. Seu funcionamento é de segunda a sexta, com exceção de feriados nacionais, das 08:00h às 19:00h.`
 
-Caso o Sr. ${nome} tenha outros produtos conosco, em breve receberá o posicionamento da tratativa.
+if(checkbox1){
+  texto += "Caso o Sr. "+nome+" tenha outros produtos conosco, em breve receberá o posicionamento da tratativa.\n\n"
+};
+texto += "Estamos à disposição para demais esclarecimentos que se fizerem necessários."
 
-Estamos à disposição para demais esclarecimentos que se fizerem necessários.`
-    
     document.getElementById("textoResultado").value = texto;
   }
   
