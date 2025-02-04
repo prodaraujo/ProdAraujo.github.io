@@ -161,7 +161,10 @@
   <label for="cpf">CPF:</label>
   <input type="text" id="cpf" placeholder="Digite o número de CPF">
 
-
+  <label class="checkbox-label1" for="produtoCheckbox">
+  <input type="checkbox" id="produtoCheckbox" class="checkbox-input1">
+    Pendente
+  </label>
 
   <button onclick="gerarTexto()">Gerar Texto</button>
 
@@ -203,11 +206,12 @@ Precisamos do registro do Comunicado para analisarmos quais documentos serão ne
 
 Para realizar o registro do comunicado siga as opções da central – 0800 722 2492, informe o CPF do (a) Segurado (a), Opção 4 – Opção 2 (Vida), 4 (Prestamista) e 6 (Previdência). Nosso horário de atendimento para abertura de sinistro é de segunda a sexta-feira, das 8h às 19 horas, exceto feriados. Ou, se preferir, você pode buscar agilizar seu atendimento através da abertura de uma solicitação de sinistro direto no nosso site de maneira fácil e rápida, em qualquer dia e horário. Acesse www.caixavidaeprevidencia.com.br/sinistro.
 
-Ficamos no aguardo do registro do Comunicado de Sinistro.
+Ficamos no aguardo do registro do Comunicado de Sinistro.`
 
-Caso o Sr. ${nome}, tenha outros produtos conosco, em breve receberá o posicionamento da tratativa.
-
-Estamos à disposição para demais esclarecimentos que se fizerem necessários.`
+if(checkbox1){
+  texto += "Caso o Sr. "+nome+" tenha outros produtos conosco, em breve receberá o posicionamento da tratativa.\n\n"
+};
+texto += "Estamos à disposição para demais esclarecimentos que se fizerem necessários."
 
     document.getElementById("textoResultado").value = texto;
   }
